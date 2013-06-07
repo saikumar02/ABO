@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cleartype" content="on">
+    <title></title>
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes'>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" /><meta name="HandheldFriendly" content="true" />
+    
+	<link rel="stylesheet" href="assets/css/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/config.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mobile-1.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/base.js"></script>
+    <script type="text/javascript" src="assets/js/mobile.js"></script>
+
+</head> 
+
+<body>
+<div id="wrapper" data-role="page" data-theme="none">
+
+	<!-- side menu navi --><!-- #BeginLibraryItem "/Library/sidemenu.lbi" -->
+<div class="sideMenu">    			
+    <ul id="sideMenuUL">
+    </ul>
+</div><!-- #EndLibraryItem --><!-- /side menu navi -->
+    <div id="close-mask"></div>
+	<!-- body content -->
+	<div id="content"><!-- #BeginLibraryItem "/Library/header.lbi" --><header>
+    <!-- header content -->
+    <div id="header-content"><!-- id="header" data-role="header" cannot be used because of conflict in hd imgs on Android's default FF browser. -->
+        <div class="header-nav-short"><div class="header-nav-btn"></div></div>
+        <div class="header-logo">&nbsp;</div>
+        <div class="header-setting-short"><a href="#dialog-setting" data-inline="true" data-rel="dialog" data-transition="fade"><div class="header-setting-btn"></div></a></div>
+    </div> 
+    <div class="header-bottom-row"></div>
+    <!-- End header content -->
+</header><!-- #EndLibraryItem -->
+			<div  id="assistance_content">
+					<!-- CMS -->
+			</div>
+			<div id="assistance_master_hidden" style="display:none"> </div>
+	</div><!-- #BeginLibraryItem "/Library/footer-scroll-without-persistent.lbi" -->
+<footer>
+    <div id="footer-menu" class="black-gradient">
+        
+    </div>
+</footer><!-- #EndLibraryItem --></div>
+<!-- End wrapper -->
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+	<div data-role="header">
+		<div class="page-title" >
+            <div id="page-title-bar" class="left"></div>
+           	<h1>WELCOME TO YOUR WISHLIST</h1>
+        </div>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<p>Here you will find all the experiences, offers and ATMs you saved for each destination.</p>	
+        </br>
+        <a style="width:auto; float:right" data-rel="back" data-inline="true" class="button-popup grey-gradient arrow-gold">
+		<span class="arrow-gold">CLOSE</span>	
+		</a>	
+	</div><!-- /content -->
+
+</div>
+
+<!-- Setting popup dialog--><!-- #BeginLibraryItem "/Library/dialog-setting.lbi" -->	
+<div data-role="page"  id="dialog-setting" style="min-width:320px;">
+  <div data-role="header">
+    <div class="page-title-settings">
+      <div class="setting-name"><h1>SETTINGS</h1></div>
+      <div class="setting-close"><a id="setting-submit"><div class="image-close close-popup"></div></a></div>
+    </div>
+  </div>
+  <!-- /header -->
+  <div data-role="content" data-theme="c" class="visa-theme">
+    <select id="currency-setting" name="currency" data-mini=true data-shadow=false >
+      <option value="Currency name (CUR)" selected>Currency name (CUR)</option>
+      <option value="Singapore (SGD)">Singapore (SGD)</option>
+    </select>
+    <div class="spacing-10"></div>
+    <select id="language-setting" name="language" data-mini=true data-shadow=false>
+      <option value="English (Default)" selected>English (Default)</option>
+      <option value="Simplified Chinese">Simplified Chinese</option>
+    </select>
+    </br>
+    <div class="visa-button black-button">
+        <center>
+           	<button  id="settings-submit" type="submit">SUBMIT</button>
+        </center>
+	</div>  
+  </div>
+</div><!-- #EndLibraryItem --><!-- End Setting popup dialog -->
+
+</body>
+<script src="/xb-mobile/assets/js/xb.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $.getScript("assets/js/on-dom-ready/" + getJs4Page());
+    });
+</script>
+<script src="assets/js/retina.js"></script>
+<script src="assets/js/header-dropdowns.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/jquery.i18n.properties-min-1.0.9.js"></script>
+
+</html>
